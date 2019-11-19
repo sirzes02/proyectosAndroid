@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.preguntasyrespuestas.ui.fragments.InicioFragment"
+        android:label="@string/menu_inicio" />
+
+    <fragment
+        android:id="@+id/nav_ranking"
+        android:name="com.example.preguntasyrespuestas.ui.fragments.RankingFragment"
+        android:label="@string/menu_ranking"
+        tools:layout="@layout/fragment_ranking" />
+
+    <fragment
+        android:id="@+id/nav_cuenta"
+        android:name="com.example.preguntasyrespuestas.ui.fragments.CuentaFragment"
+        android:label="@string/menu_cuenta"
+        tools:layout="@layout/fragment_cuenta" />
+
+    <fragment
+        android:id="@+id/nav_informacion"
+        android:name="com.example.preguntasyrespuestas.ui.fragments.InformacionFragment"
+        android:label="@string/menu_informacion"
+        tools:layout="@layout/fragment_informacion" />
+</navigation>
